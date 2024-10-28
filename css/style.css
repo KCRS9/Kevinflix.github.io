@@ -4,13 +4,13 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body{
+body {
     background-color: black;
     color: white;
     text-shadow: 5px 5px 10px black;
 }
 
-main p{
+main p {
     font-size: 1vh;
     opacity: 0;
     transition: 0.5s all ease-in-out;
@@ -19,12 +19,13 @@ main p{
 
 /* <!-- HEADER --> */
 
-header{
+header {
     /* background-color: rgb(255, 0, 0); */
-    background-color:  #133945;/*ES ESTEEEEEEEEEEE*/
+    background-color: #133945;
+    /*ES ESTEEEEEEEEEEE*/
     opacity: 0.8;
     position: fixed;
-    top: 0; 
+    top: 0;
     padding-top: 5px;
     height: 8.5vh;
     z-index: 3;
@@ -32,26 +33,27 @@ header{
     transition: 0.5s all ease-in-out;
 }
 
-header:hover{
+header:hover {
     opacity: 1;
 }
 
 /* <!-- MENU DE NAVEGACION --> */
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-nav ul{
+nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-nav ul li{
+nav ul li {
     /* background-color: aqua; */
     list-style: none;
-    font-size: 2.5vh; /*1rem*/
+    font-size: 2.5vh;
+    /*1rem*/
     font-weight: bolder;
     padding: 0.5vh;
     border-radius: 5px;
@@ -63,29 +65,29 @@ nav ul li:hover {
     background-color: rgb(255, 255, 255, 0.5);
 }
 
-.nav_ocu{
+.nav_ocu {
     display: none;
 }
 
 
-#logo_img img{
+#logo_img img {
     width: 22vh;
     padding: 0;
     transition: 0.5s all ease;
 }
 
-#logo_img img:hover{
+#logo_img img:hover {
     width: 24vh;
 }
 
 /* <!-- MAIN --> */
-main{
+main {
     /* background-color: orange; */
     margin-top: 9vh;
 }
 
 /* <!-- SECCION 1 --> */
-.redd{
+.redd {
     background-repeat: no-repeat;
     background-size: cover;
     /* opacity: 0.8; */
@@ -127,11 +129,11 @@ main{
     margin-left: 20px;
 }
 
-#titulos1 h2{
+#titulos1 h2 {
     font-size: 6vh;
 }
 
-#principal:hover > #titulos1 p{
+#principal:hover>#titulos1 p {
     font-size: 3vh;
     margin-bottom: 50vh;
     opacity: 1;
@@ -143,29 +145,30 @@ main{
 
 /* <!-- SECCION 2 --> */
 
-#seccion2{
+#seccion2 {
     /* background-color: black; */
     margin-top: 5px;
     max-width: 95vw;
     margin: auto;
 }
- /*General Articulos*/
-article{
+
+/*General Articulos*/
+article {
     /* background-color: brown ; */
     margin: 1vw;
-    border-top: 1px #133945 solid  ;
+    border-top: 1px #133945 solid;
 }
 
 /*general conenedores*/
-.contenedores{
+.contenedores {
     display: flex;
     height: 40vh;
     gap: 1vw;
     /* overflow: hidden; */
-    
+
 }
 
-.contenedor{
+.contenedor {
     /* background-color: yellow; */
     border-radius: 15px;
     align-content: end;
@@ -176,6 +179,7 @@ article{
     height: 35vh;
     transition: 0.5s all ease-in-out;
 }
+
 .contenedor:hover {
     width: 60vw;
     height: 40vh;
@@ -186,7 +190,7 @@ article{
 
 /*general titulos*/
 
-.titulo{
+.titulo {
     /* background-color: rgb(194, 62, 178); */
     padding-left: 10px;
     height: 6vh;
@@ -194,21 +198,21 @@ article{
     transition: 0.5s padding ease-in;
 }
 
-article:hover > .titulo{
+article:hover>.titulo {
     padding-left: 30px;
 }
 
-.titulos_dos{
+.titulos_dos {
     padding: 10px;
 }
 
-.titulos_dos h3{
+.titulos_dos h3 {
     font-size: 3vh;
 }
 
 
 
-.contenedor:hover > .titulos_dos p{
+.contenedor:hover>.titulos_dos p {
     font-size: 2vh;
     opacity: 1;
 }
@@ -281,72 +285,72 @@ article:hover > .titulo{
 
 /* <!-- FOOTER --> */
 
-footer{
+footer {
     padding: 20px 0;
     text-align: center;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1200px) {
 
-    header{
+    header {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .header_menu{
+    .header_menu {
         flex: 1;
     }
 
-    .contenedores{
+    .contenedores {
         /* display: block; */
         flex-wrap: wrap;
         height: 80vh;
     }
 
-    .contPrinc{
+    .contPrinc {
         width: 100%;
     }
 
-    .contPrinc:hover{
+    .contPrinc:hover {
         width: 100%;
     }
 
     /*navegador*/
 
-    header{
+    header {
         display: flex;
     }
 
-    .header_menu{
+    .header_menu {
         flex: 1;
         /* background-color: black; */
-        
+
     }
 
-    .no_menu{
+    .no_menu {
         display: none;
-    } 
+    }
 
-    .nav_ocu{
+    .nav_ocu {
         display: block;
         text-align: center;
     }
 
-    #img_menu{
+    #img_menu {
         cursor: pointer;
         width: 6vh;
         padding-left: 1vh;
     }
 
-    #menu ul{
+    #menu ul {
         flex-direction: column;
         position: fixed;
         top: 9vh;
         padding-left: 5px;
-        gap:10px;
+        gap: 10px;
         background-color: #133945;
-        align-items:start;
+        align-items: start;
         height: 0;
         width: 40vw;
         overflow: hidden;
@@ -354,66 +358,65 @@ footer{
         border-bottom-right-radius: 5px;
     }
 
-    #img_menu:hover + ul{
+    #img_menu:hover+ul {
         height: 24vh;
     }
 
-    #esteUl:hover{
+    #esteUl:hover {
         height: 24vh;
     }
 
-    #esteUl li{
+    #esteUl li {
         width: 20vw;
     }
 
-    #logo1{
+    #logo1 {
         width: 22vh;
     }
 
-        /*textos*/
-        #titulos1 h2{
-            font-size: 5vh;
-        }
+    /*textos*/
+    #titulos1 h2 {
+        font-size: 5vh;
+    }
 
-        .cerrar{
-            font-weight: bold;
-            text-align: end;
-            padding-right: 3vw;
-            font-size: 2vh;
-        }
-    
-        #principal:hover > #titulos1 p{
-            font-size: 2.8vh;
-        }
-    
+    .cerrar {
+        font-weight: bold;
+        text-align: end;
+        padding-right: 3vw;
+        font-size: 2vh;
+    }
+
+    #principal:hover>#titulos1 p {
+        font-size: 2.8vh;
+    }
+
 
 }
 
 @media screen and (max-width: 520px) {
-    .contenedores{
+    .contenedores {
         flex-direction: column;
         height: 100%;
         align-items: center;
         margin: 1vw;
     }
 
-    .contenedor{
+    .contenedor {
         width: 95%;
         margin-top: 2vw;
     }
 
-    .contenedor:hover{
+    .contenedor:hover {
         width: 100%;
     }
 
     /*textos*/
-    #titulos1 h2{
+    #titulos1 h2 {
         font-size: 4vh;
     }
 
-    #principal:hover > #titulos1 p{
+    #principal:hover>#titulos1 p {
         font-size: 2vh;
     }
 
 }
-
